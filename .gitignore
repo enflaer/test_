@@ -1,5 +1,4 @@
 /node_modules
 /app/css
 /.idea
-.idea/workspace.xml
-index.html
+app/index.html
