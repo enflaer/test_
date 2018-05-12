@@ -1,0 +1,53 @@
+@import "variables";
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/pt-sans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-F6CE;
+}
+
+@font-face {
+  font-family: 'PTSansBold';
+  src: url('../fonts/pt-sans-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-F6CE;
+}
+
+html {
+  font-family: $font-stack;
+  font-size: 14px !important;
+  padding: 0 ;
+  margin: 0 ;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000000;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.block-name {
+  font-family: PTSansBold;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 50px 0 20px 0;
+}
+
+.rng {
+  height: 100px;
+  background-color: #ffbb02;
+}

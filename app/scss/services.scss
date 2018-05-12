@@ -1,0 +1,17 @@
+@import "variables";
+.services {
+  background-color: $primary-color;
+}
+.services-block {
+  padding: 50px 25px 25px 25px;
+}
+
+.services-block__info-header {
+  font-family: PTSansBold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.services-block__info-text{
+  font-size: 0.875rem;
+}

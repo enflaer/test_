@@ -1,0 +1,51 @@
+@import "mixins";
+@import "variables";
+.slider {
+  background-color: $primary-color;
+}
+
+.carousel-enum {
+  position: absolute;
+  z-index: 1;
+  right: 0%;
+  top: 5%;
+  > li {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    list-style-image: url("../images/square.png");
+    @include transition(0.5s)
+  }
+  > li.active {
+    list-style-image: url("../images/square2.png");
+    @include transition(0.5s)
+  }
+}
+
+.left-arrow {
+  bottom: 5.5%;
+  left: 48.4%;
+  background-image: url("../images/arrow.png");
+  @include transition(0.5s)
+}
+
+.right-arrow {
+  bottom: 0;
+  left: 51.5%;
+  background-image: url("../images/arrow.png");
+  transform: rotate(180deg);
+  @include transition(0.5s)
+}
+.right-arrow:hover, .left-arrow:hover {
+  box-shadow:0 0 0 128px rgba(255, 255, 255, 0.5) inset;
+  @include transition(0.5s)
+}
+
+
+.right-arrow, .left-arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+

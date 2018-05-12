@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+
+.todo-list {
+  padding-top: 70px;
+}
+
+.todo-list__name {
+  text-transform: uppercase;
+}
+.todo-list__tasks{
+  margin-left: 1px;
+}
+
+.tasksList {
+  padding-left: 0px;
+}
+
+.todo-list__name, .task, .notification {
+  font-family: PTSansBold;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.delete {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.taskAdd, .taskClear {
+  margin-left: 20px;
+}
+
+.delete, .taskAdd, .taskClear {
+  background: transparent;
+  border: none;
+}
+
+.todo-list__input > input {
+  width: 80%;
+}
+
+.taskInput{
+  @include box-shadow-input;
+  padding: 5px;
+  border:1px solid $input-border-color;
+  @include border-radius(4px);
+  margin-bottom:100px;
+}
